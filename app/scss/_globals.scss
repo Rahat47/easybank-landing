@@ -17,6 +17,10 @@ body {
     font-weight: 300;
     font-size: $font-med;
     color: $grayishBlue;
+
+    &.noScroll {
+        overflow: hidden;
+    }
 }
 
 a,
@@ -69,4 +73,10 @@ button,
     @include breakpoint-up(large) {
         display: none;
     }
+}
+
+//Spacing
+.container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
